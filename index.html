@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel River Fishing: Redux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #1e293b;
+        color: #e4e4e7;
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        overflow: hidden;
+        image-rendering: pixelated;
+      }
+      
+      canvas {
+        image-rendering: pixelated;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      }
+
+      .pixel-font {
+        text-shadow: 2px 2px 0 #000;
+      }
+      
+      /* Custom scrollbar for shop */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #27272a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #52525b; 
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #71717a; 
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
